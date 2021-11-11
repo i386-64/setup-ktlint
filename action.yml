@@ -1,0 +1,13 @@
+name: Setup Ktlint
+description: Installs Ktlint, a Kotlin linter
+inputs:
+  version:
+    description: The version of KtLint to be installed.
+    required: false
+    default: 0.43.0
+outputs:
+  version:
+    description: The version of KtLint installed.
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
